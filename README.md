@@ -75,24 +75,3 @@ To review violations after a run:
 ```bash
 streamlit run dashboard.py
 ```
-
-## Where this goes from here (great interview talking points)
-
-- Swap the generic vehicle-detector OCR crop for a **dedicated license-plate
-  detection model** fine-tuned on a plate dataset — big accuracy jump.
-- Add **red-light violation detection** using a defined stop-line polygon.
-- Deploy on an edge device (Jetson Nano/Orin) with a quantized model for
-  real deployments at intersections.
-- Add **re-identification** so a vehicle that briefly leaves frame and
-  re-enters isn't treated as a new ID.
-- Wrap `main.py` as a FastAPI service so multiple camera feeds can push
-  violations into one central database.
-
-## Why this project stands out to employers
-
-Most beginner CV portfolios stop at "classify an image." This project
-demonstrates the full skill stack hiring managers actually look for:
-object detection, multi-object tracking, geometric computer vision
-(homography), OCR integration, a persistence layer, and a usable frontend
-— all working together to solve a problem with obvious commercial value
-(traffic enforcement, smart cities, parking systems, fleet monitoring).
